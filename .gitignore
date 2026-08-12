@@ -13,7 +13,6 @@ dist-ssr
 *.local
 
 # Editor directories and files
-.vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
@@ -22,3 +21,14 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Rust / Soroban contract build artifacts
+contracts/target
+**/*.rs.bk
+contracts/_run_tests.bat
+.stellar
+.soroban
+
+# Auto-generated Soroban test snapshots (written by `cargo test`)
+contracts/pawnloan/test_snapshots
+config.bat
